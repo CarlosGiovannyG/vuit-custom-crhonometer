@@ -1,0 +1,128 @@
+.container {
+  max-width: 1200%;
+  width: 90%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: rgb(197, 191, 191);
+}
+
+.containerImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stylesImage {
+  width: 75em;
+  height: 150px;
+  border: none;
+  display: flex;
+}
+
+.containerDisplay {
+  min-width: 30%;
+  width: 30%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(10, 209, 10);
+}
+
+.styleDisplay {
+  width: 80%;
+  grid-area: countdown;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 100px));
+  grid-gap: 5px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.containerDate {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.DateNumber {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+
+.containerDateAlert {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: red;
+}
+
+.containerDescription {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .container {
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .stylesImage {
+    width: 60em;
+    height: 100px;
+  }
+
+  .containerDisplay {
+    min-width: 30%;
+    width: 30%;
+    min-height: 100px;
+  }
+
+  .styleDisplay {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(20px, 100px));
+    padding-bottom: 20px;
+    margin: 10px auto;
+  }
+
+  .styleDisplay {
+    width: 90%;
+    grid-gap: 1px;
+    padding-bottom: 5px;
+  }
+
+  .containerDate {
+    grid-gap: 1px;
+  }
+
+  .DateNumber {
+    font-size: .875em;
+    font-weight: 400;
+  }
+
+  .containerDateAlert {
+    font-size: 0.875em;
+    font-weight: 400;
+  }
+
+  .containerDescription {
+    font-size: 0.875em;
+    font-weight: 400;
+  }
+
+
+
+}
